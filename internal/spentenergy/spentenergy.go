@@ -18,16 +18,16 @@ const (
 
 func WalkingSpentCalories(steps int, weight, height float64, duration time.Duration) (float64, error) {
 	if steps <= 0 {
-		return 0, fmt.Errorf("[WalkingSpentCalories(%v)] %w: 'steps' must be greater '0'", steps, errInput)
+		return 0, fmt.Errorf("%w: 'steps' must be greater '0'", errInput)
 	}
 	if weight <= 0 {
-		return 0, fmt.Errorf("[WalkingSpentCalories(%v)] %w: 'weight' must be greater '0'", weight, errInput)
+		return 0, fmt.Errorf("%w: 'weight' must be greater '0'", errInput)
 	}
 	if height <= 0 {
-		return 0, fmt.Errorf("[WalkingSpentCalories(%v)] %w: 'height' must be greater '0'", height, errInput)
+		return 0, fmt.Errorf("%w: 'height' must be greater '0'", errInput)
 	}
 	if duration <= 0 {
-		return 0, fmt.Errorf("[WalkingSpentCalories(%v)] %w: 'duration' must be greater '0'", duration, errInput)
+		return 0, fmt.Errorf("%w: 'duration' must be greater '0'", errInput)
 	}
 
 	meanSpeed := MeanSpeed(steps, height, duration)
@@ -38,16 +38,16 @@ func WalkingSpentCalories(steps int, weight, height float64, duration time.Durat
 
 func RunningSpentCalories(steps int, weight, height float64, duration time.Duration) (float64, error) {
 	if steps <= 0 {
-		return 0, fmt.Errorf("[RunningSpentCalories(%v)] %w: 'steps' must be greater '0'", steps, errInput)
+		return 0, fmt.Errorf("%w: 'steps' must be greater '0'", errInput)
 	}
 	if weight <= 0 {
-		return 0, fmt.Errorf("[RunningSpentCalories(%v)] %w: 'weight' must be greater '0'", weight, errInput)
+		return 0, fmt.Errorf("%w: 'weight' must be greater '0'", errInput)
 	}
 	if height <= 0 {
-		return 0, fmt.Errorf("[RunningSpentCalories(%v)] %w: 'height' must be greater '0'", height, errInput)
+		return 0, fmt.Errorf("%w: 'height' must be greater '0'", errInput)
 	}
 	if duration <= 0 {
-		return 0, fmt.Errorf("[RunningSpentCalories(%v)] %w: 'duration' must be greater '0'", duration, errInput)
+		return 0, fmt.Errorf("%w: 'duration' must be greater '0'", errInput)
 	}
 
 	meanSpeed := MeanSpeed(steps, height, duration)
