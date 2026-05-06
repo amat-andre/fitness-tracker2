@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"errors"
 
-	pd "github.com/Yandex-Practicum/tracker/internal/personaldata"
-	sp "github.com/Yandex-Practicum/tracker/internal/spentenergy"
+	pd "github.com/amat-andre/fitness-tracker2/internal/personaldata"
+	sp "github.com/amat-andre/fitness-tracker2/internal/spentenergy"
 )
 
 var (
