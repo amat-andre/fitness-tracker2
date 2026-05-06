@@ -1,4 +1,4 @@
-module github.com/Yandex-Practicum/tracker
+module github.com/amat-andre/fitness-tracker2
 
 go 1.24.1
 
