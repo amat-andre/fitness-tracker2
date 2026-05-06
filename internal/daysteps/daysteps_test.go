@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Yandex-Practicum/tracker/internal/personaldata"
+	"github.com/amat-andre/fitness-tracker2/internal/personaldata"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
